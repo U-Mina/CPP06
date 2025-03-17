@@ -6,19 +6,19 @@
 /*   By: ewu <ewu@student.42heilbronn.de>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/15 15:29:55 by ewu               #+#    #+#             */
-/*   Updated: 2025/03/17 11:18:20 by ewu              ###   ########.fr       */
+/*   Updated: 2025/03/17 13:12:23 by ewu              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef SCALARCONVERTER_HPP
-# define SCALARCONVERTER_HPP
+#define SCALARCONVERTER_HPP
 
-# include <string>
-# include <cmath>
-# include <climits>
-# include <iostream>
-# include <iomanip>
-# include <exception>
+#include <string>
+#include <cmath>
+#include <climits>
+#include <iostream>
+#include <iomanip>
+#include <exception>
 
 // possible input: char, int, floar, double, pseudo-litral
 class ScalarConverter

@@ -6,15 +6,15 @@
 /*   By: ewu <ewu@student.42heilbronn.de>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/15 15:36:51 by ewu               #+#    #+#             */
-/*   Updated: 2025/03/17 11:22:55 by ewu              ###   ########.fr       */
+/*   Updated: 2025/03/17 13:12:13 by ewu              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ScalarConverter.hpp"
-#include <cmath>
-#include <climits>
-#include <iostream>
-#include <exception>
+// #include <cmath>
+// #include <climits>
+// #include <iostream>
+// #include <exception>
 
 ScalarConverter::ScalarConverter(){}
 ScalarConverter::~ScalarConverter() {}

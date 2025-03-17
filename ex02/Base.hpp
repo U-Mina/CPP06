@@ -1,24 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Serializer.cpp                                     :+:      :+:    :+:   */
+/*   Base.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ewu <ewu@student.42heilbronn.de>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/03/17 13:13:26 by ewu               #+#    #+#             */
-/*   Updated: 2025/03/17 13:23:13 by ewu              ###   ########.fr       */
+/*   Created: 2025/03/17 20:20:32 by ewu               #+#    #+#             */
+/*   Updated: 2025/03/17 20:32:10 by ewu              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Serializer.hpp"
-#include "Data.hpp"
+#ifndef BASE_HPP
+#define BASE_HPP
 
-uintptr_t Serializer::serialize(Data* ptr)
+class Base
 {
-	return reinterpret_cast<uintptr_t>(ptr);
-}
+public:
+	virtual ~Base();//runtime polymorphism
+};
 
-Data* Serializer::deserialize(uintptr_t raw)
-{
-	return reinterpret_cast<Data*>(raw);
-}
+#endif

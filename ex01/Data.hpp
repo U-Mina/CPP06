@@ -1,24 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Serializer.cpp                                     :+:      :+:    :+:   */
+/*   Data.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ewu <ewu@student.42heilbronn.de>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/03/17 13:13:26 by ewu               #+#    #+#             */
-/*   Updated: 2025/03/17 13:23:13 by ewu              ###   ########.fr       */
+/*   Created: 2025/03/17 13:10:24 by ewu               #+#    #+#             */
+/*   Updated: 2025/03/17 13:34:41 by ewu              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Serializer.hpp"
-#include "Data.hpp"
+#ifndef DATA_HPP
+#define DATA_HPP
 
-uintptr_t Serializer::serialize(Data* ptr)
-{
-	return reinterpret_cast<uintptr_t>(ptr);
-}
+#include <string>
 
-Data* Serializer::deserialize(uintptr_t raw)
+struct Data
 {
-	return reinterpret_cast<Data*>(raw);
-}
+	int nbr;
+	std::string s;
+};
+
+#endif
